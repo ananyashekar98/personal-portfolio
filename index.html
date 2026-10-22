@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya S | Personal Portfolio</title>
+  <meta name="description" content="Portfolio of Ananya S, Information Science Engineering student and full-stack developer from Bangalore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">Ananya<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Ananya S</h1>
+        <p class="role">Full-Stack Developer<span class="cursor">|</span></p>
+        <p class="lead">Information Science Engineering student building full-stack and AI-powered web applications with React, Node.js, Express and MongoDB.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="Ananya_S_Resume.pdf" class="btn ghost" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="avatar">AS</div>
+        <ul>
+          <li><strong>Based in</strong> Bangalore, India</li>
+          <li><strong>Studying</strong> ISE, GAT (2027)</li>
+          <li><strong>Now</strong> Java Full Stack Trainee</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="reveal">About Me</h2>
+      <div class="about-grid">
+        <p class="reveal">I'm an Information Science Engineering student graduating in 2027, with hands-on experience in React, JavaScript, Node.js, Express.js, MongoDB, REST APIs and Java. I have built full-stack and AI-powered applications covering frontend development, backend APIs, authentication, database integration and AI/LLM-based solutions. I'm passionate about building scalable web applications and strong software solutions.</p>
+        <div class="stats reveal">
+          <div class="stat"><span class="num" data-target="3">0</span><small>Internships</small></div>
+          <div class="stat"><span class="num" data-target="3">0</span><small>Major projects</small></div>
+          <div class="stat"><span class="num" data-target="3">0</span><small>Languages spoken</small></div>
+        </div>
+      </div>
+
+      <h3 class="reveal">Education</h3>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <span class="t-date">Graduating 2027</span>
+          <h4>B.E. Information Science and Engineering</h4>
+          <p>Global Academy of Technology, Bangalore. Pursuing 7th Semester, CGPA: 7.57</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date">2023</span>
+          <h4>Pre-University</h4>
+          <p>Sri Chaithanya PU College, Bangalore. Percentage: 76.8%</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date">2021</span>
+          <h4>Schooling</h4>
+          <p>Sri Siddaganga Higher Primary School, Bangalore. Percentage: 83.0%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <h2 class="reveal">Technical Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group reveal">
+          <h4>Languages</h4>
+          <div class="chips"><span>JavaScript</span><span>Java</span><span>SQL</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>Frontend</h4>
+          <div class="chips"><span>React.js</span><span>HTML</span><span>CSS</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>Backend</h4>
+          <div class="chips"><span>Node.js</span><span>Express.js</span><span>REST APIs</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>Database</h4>
+          <div class="chips"><span>MongoDB</span><span>SQL</span><span>DBMS</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>CS Fundamentals</h4>
+          <div class="chips"><span>OOP</span><span>DSA</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h4>Tools</h4>
+          <div class="chips"><span>GitHub</span><span>Postman</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="reveal">Projects</h2>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="ai">AI</button>
+        <button class="filter" data-filter="web">Web</button>
+      </div>
+      <div class="cards" id="cards">
+        <article class="card reveal" data-cat="ai web">
+          <h3>CareerForge Pro</h3>
+          <p class="subtitle">AI Resume Architect &amp; ATS Optimizer</p>
+          <ul class="points">
+            <li>Built a full-stack resume platform using React, Node.js, Express.js and MongoDB with REST APIs and JWT authentication.</li>
+            <li>Integrated Groq LLM for AI-powered JD analysis, keyword extraction, ATS scoring and resume optimization, with Puppeteer PDF generation and Stripe Checkout for export and subscription management.</li>
+          </ul>
+          <div class="tags"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Groq LLM</span><span>Puppeteer</span><span>Stripe</span></div>
+          <a class="card-link" href="https://github.com/ananyashekar98" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="ai">
+          <h3>OpsMind AI</h3>
+          <p class="subtitle">Enterprise SOP Agent</p>
+          <ul class="points">
+            <li>Full-stack generative AI application using React 19, Express.js, MongoDB, LangChain.js and Groq Llama 3.3 70B.</li>
+            <li>AI-powered RAG application for querying enterprise SOP documents with source-cited responses.</li>
+            <li>Implemented JWT authentication, real-time streaming (SSE) and optimized semantic search.</li>
+          </ul>
+          <div class="tags"><span>React 19</span><span>Express.js</span><span>MongoDB</span><span>LangChain.js</span><span>Groq Llama 3.3 70B</span><span>RAG</span><span>SSE</span></div>
+          <a class="card-link" href="https://github.com/ananyashekar98" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="web">
+          <h3>CampusEase</h3>
+          <p class="subtitle">Smart Classroom Booking and Faculty Locator</p>
+          <ul class="points">
+            <li>Full-stack mobile/web application using React Native, Node.js, Express.js, MongoDB, JWT and Groq LLM.</li>
+            <li>Built a role-based classroom booking system with automatic clash detection and a constraint-based Auto-Allocator for clash-free timetable generation.</li>
+            <li>Built a real-time Faculty Locator with in-class status detection and Groq LLM assistance.</li>
+          </ul>
+          <div class="tags"><span>React Native</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Groq LLM</span></div>
+          <a class="card-link" href="https://github.com/ananyashekar98" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <h2 class="reveal">Internship Experience</h2>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <span class="t-date">Jul 2026 - Present</span>
+          <h4>Java Full Stack Development Trainee</h4>
+          <p class="org">Pentagon Space Pvt Ltd</p>
+          <ul class="points">
+            <li>Undergoing hands-on training in Java Full Stack Development.</li>
+            <li>Strengthening skills in Java, SQL, backend APIs and full-stack development.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <span class="t-date">Feb 2026 - May 2026 &middot; Online</span>
+          <h4>Web Development Intern</h4>
+          <p class="org">Zaalima Development Pvt Ltd</p>
+          <ul class="points">
+            <li>Developed responsive web pages using HTML, CSS and JavaScript.</li>
+            <li>Improved UI consistency and overall website performance.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <span class="t-date">May 2025 - Jun 2025 &middot; Online</span>
+          <h4>Data Science Intern</h4>
+          <p class="org">Elewayte</p>
+          <ul class="points">
+            <li>Worked on data analysis and basic machine learning concepts.</li>
+            <li>Gained hands-on experience in data preprocessing and visualization.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <h2 class="reveal">Certifications &amp; Achievements</h2>
+      <div class="cards small">
+        <div class="card reveal"><h3>Java Course</h3><p>Mastering the Fundamentals</p></div>
+        <div class="card reveal"><h3>Scaler Topics</h3><p>Certification</p></div>
+        <div class="card reveal"><h3>Full Stack React</h3><p>Learning Full Stack React with Advanced Concepts</p></div>
+        <div class="card reveal"><h3>Infosys Springboard</h3><p>Certification</p></div>
+        <div class="card reveal"><h3>Claude with the Anthropic API</h3><p>Anthropic</p></div>
+        <div class="card reveal"><h3>Hackathon</h3><p>Participation Certificate (1)</p></div>
+      </div>
+      <h3 class="reveal">Languages</h3>
+      <div class="chips reveal"><span>English</span><span>Kannada</span><span>Hindi</span></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <h2 class="reveal">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>Looking for an intern or a developer? Send me a message and I'll get back to you.</p>
+          <p><strong>Email:</strong> <a href="mailto:ananyashekar98@gmail.com">ananyashekar98@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919019244253">+91 90192 44253</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ananya-s-093ba1362/" target="_blank" rel="noopener">linkedin.com/in/ananya-s-093ba1362</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/ananyashekar98" target="_blank" rel="noopener">github.com/ananyashekar98</a></p>
+          <p><strong>Location:</strong> Bangalore, India</p>
+        </div>
+        <form id="contactForm" class="form reveal" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+            <small class="error" id="nameError"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+            <small class="error" id="emailError"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message (min 10 characters)"></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p class="success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Ananya S. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
